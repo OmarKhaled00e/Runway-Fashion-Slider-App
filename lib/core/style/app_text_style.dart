@@ -12,6 +12,11 @@ class TextStyles {
     fontSize: 18,
     color: Color(0xff000000),
   );
+  static TextStyle text16White = GoogleFonts.inter(
+    fontWeight: FontWeight.w700,
+    fontSize: 16,
+    color: Color(0xffFFFFFF),
+  );
   static TextStyle text16 = GoogleFonts.inter(
     fontWeight: FontWeight.w600,
     fontSize: 16,

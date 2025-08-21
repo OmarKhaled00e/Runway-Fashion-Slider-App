@@ -7,11 +7,12 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
     super.key,
     required this.title,
     required this.prefix,
-    required this.suffix,
+    required this.suffix, this.onTap,
   });
   final String title;
   final String prefix;
   final String suffix;
+  final Function()? onTap;
   @override
   Size get preferredSize => Size.fromHeight(80);
   @override
@@ -25,7 +26,9 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SvgPicture.asset(prefix, width: 24),
+          GestureDetector(
+            onTap: onTap,
+            child: SvgPicture.asset(prefix, width: 24)),
           Text(title, style: TextStyles.text18),
           SvgPicture.asset(suffix, width: 24),
         ],

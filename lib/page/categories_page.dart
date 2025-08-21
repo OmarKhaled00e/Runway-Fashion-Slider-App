@@ -73,7 +73,11 @@ class CategoriesPage extends StatelessWidget {
                     onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (c) => ProductDetails(item: item),
+                        builder: (c) => ProductDetails(
+                          image: item.image,
+                          name: item.name,
+                          price: item.price,
+                        ),
                       ),
                     ),
                   );
