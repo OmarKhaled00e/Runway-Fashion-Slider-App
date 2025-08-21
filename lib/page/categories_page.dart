@@ -62,13 +62,13 @@ class CategoriesPage extends StatelessWidget {
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   crossAxisSpacing: 10,
-                  childAspectRatio: 1 / 1.8,
+                  childAspectRatio: 0.4,
                 ),
                 itemBuilder: (context, index) {
                   final item = products[index];
                   return ProductItem(
                     image: item.image,
-                    price: item.image,
+                    price: item.price,
                     name: item.name,
                     onTap: () => Navigator.push(
                       context,

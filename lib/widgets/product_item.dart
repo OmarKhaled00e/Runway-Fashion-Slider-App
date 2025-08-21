@@ -44,6 +44,7 @@ class ProductItem extends StatelessWidget {
             children: [
               // price
               Text('\$${price}', style: TextStyles.text16),
+
               Icon(Icons.favorite_border),
             ],
           ),
