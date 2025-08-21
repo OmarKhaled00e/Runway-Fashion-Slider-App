@@ -17,6 +17,8 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      scrolledUnderElevation: 0.0,
+      backgroundColor: Colors.white,
       toolbarHeight: preferredSize.height,
       leading: SizedBox.shrink(),
       leadingWidth: 0.0,
@@ -24,7 +26,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           SvgPicture.asset(prefix, width: 24),
-          Text(title, style: TextStyles.text18,),
+          Text(title, style: TextStyles.text18),
           SvgPicture.asset(suffix, width: 24),
         ],
       ),

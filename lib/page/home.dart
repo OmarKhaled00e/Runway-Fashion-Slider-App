@@ -40,7 +40,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: CustomAppbar(
         title: 'Runway',
-        prefix: 'assets/image/bar-chart-2.svg',
+        prefix: 'assets/image/menu.svg',
         suffix: 'assets/image/notiactio.svg',
       ),
       body: Stack(
@@ -93,6 +93,7 @@ class _HomeState extends State<Home> {
                       }),
                     ),
                   ),
+                  Gap(30),
                 ],
               ),
             ),

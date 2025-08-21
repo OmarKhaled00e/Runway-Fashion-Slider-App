@@ -22,5 +22,10 @@ class TextStyles {
     fontSize: 14,
     color: Color(0xff131313),
   );
+  static TextStyle text14Meduim = GoogleFonts.inter(
+    fontWeight: FontWeight.w500,
+    fontSize: 14,
+    color: Color(0xff000000),
+  );
   
 }
